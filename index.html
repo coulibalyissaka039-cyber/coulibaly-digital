@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coulibaly Digital — Sites web professionnels au Mali</title>
+
+<meta name="description" content="Coulibaly Digital crée des sites web modernes et professionnels pour les entreprises, commerces, restaurants et entrepreneurs au Mali.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#55e58d;
+  --green2:#24bf6c;
+  --dark:#02150d;
+  --dark2:#062419;
+  --dark3:#0b3021;
+  --white:#f5faf7;
+  --muted:#98afa3;
+  --line:rgba(255,255,255,.11);
+  --light:#f3f8f4;
+  --ink:#10251a;
+  --shadow:0 25px 70px rgba(0,0,0,.28);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"DM Sans",sans-serif;
+  background:var(--dark);
+  color:var(--white);
+  overflow-x:hidden;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  padding:0 14px;
+}
+
+.nav{
+  height:72px;
+  padding:0 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(2,21,13,.86);
+  border:1px solid rgba(255,255,255,.08);
+  border-top:0;
+  border-radius:0 0 18px 18px;
+  backdrop-filter:blur(20px);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:"Manrope";
+  font-weight:800;
+  font-size:17px;
+}
+
+.logo-mark{
+  width:38px;
+  height:38px;
+  border-radius:11px;
+  display:grid;
+  place-items:center;
+  background:var(--green);
+  color:#032015;
+  font-size:21px;
+  font-weight:900;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:27px;
+  font-size:11px;
+  color:#c9d8d0;
+}
+
+.nav-links a{
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  color:var(--green);
+}
+
+.wa-mini{
+  background:var(--green);
+  color:#032015!important;
+  padding:11px 15px;
+  border-radius:22px;
+  font-weight:800;
+}
+
+.menu{
+  display:none;
+  background:none;
+  border:0;
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:780px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  padding:120px 0 70px;
+  background:
+    radial-gradient(circle at 75% 45%,rgba(74,211,128,.18),transparent 31%),
+    linear-gradient(110deg,#01130b 0%,#05261a 48%,#082b1e 100%);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  right:-250px;
+  top:50px;
+  border-radius:50%;
+  background:rgba(82,229,139,.08);
+  filter:blur(10px);
+}
+
+.hero-content{
+  position:relative;
+  z-index:5;
+  max-width:610px;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 13px;
+  border:1px solid rgba(85,229,141,.35);
+  background:rgba(85,229,141,.07);
+  border-radius:30px;
+  color:var(--green);
+  font-size:10px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 15px var(--green);
+}
+
+.hero h1{
+  font-family:"Manrope";
+  font-size:clamp(43px,6vw,69px);
+  line-height:1.01;
+  letter-spacing:-3px;
+  margin-bottom:21px;
+}
+
+.hero h1 span{
+  color:var(--green);
+}
+
+.hero p{
+  color:#b9cbc2;
+  font-size:14px;
+  line-height:1.75;
+  max-width:575px;
+  margin-bottom:25px;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:11px;
+  margin-bottom:27px;
+}
+
+.btn{
+  border-radius:10px;
+  padding:13px 19px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:1px solid rgba(255,255,255,.15);
+  font-size:11px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn-green{
+  background:var(--green);
+  color:#032015;
+  border-color:var(--green);
+}
+
+.btn-dark{
+  background:rgba(255,255,255,.03);
+}
+
+.hero-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+.point{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  color:#c5d3cc;
+  font-size:9px;
+}
+
+.point i{
+  width:25px;
+  height:25px;
+  border-radius:8px;
+  display:grid;
+  place-items:center;
+  background:rgba(85,229,141,.1);
+  border:1px solid rgba(85,229,141,.2);
+  color:var(--green);
+  font-style:normal;
+}
+
+/* =========================
+   HERO DEVICE VISUAL
+========================= */
+
+.hero-visual{
+  position:absolute;
+  right:2%;
+  top:105px;
+  width:52%;
+  height:610px;
+  z-index:3;
+}
+
+.glow{
+  position:absolute;
+  width:430px;
+  height:430px;
+  right:80px;
+  top:90px;
+  border-radius:50%;
+  background:rgba(85,229,141,.13);
+  filter:blur(45px);
+}
+
+.laptop{
+  position:absolute;
+  width:560px;
+  height:355px;
+  right:20px;
+  top:105px;
+  transform:perspective(900px) rotateY(-9deg) rotateX(3deg);
+  z-index:3;
+}
+
+.laptop-screen{
+  height:305px;
+  padding:10px;
+  border-radius:17px 17px 8px 8px;
+  background:#101714;
+  border:5px solid #18211d;
+  box-shadow:0 35px 80px rgba(0,0,0,.45);
+}
+
+.laptop-screen-inner{
+  height:100%;
+  overflow:hidden;
+  border-radius:9px;
+  background:#f5f7f4;
+  position:relative;
+}
+
+.screen-top{
+  height:34px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 13px;
+}
+
+.screen-logo{
+  font-size:8px;
+  font-weight:900;
+  color:#163b28;
+}
+
+.screen-nav{
+  display:flex;
+  gap:10px;
+}
+
+.screen-nav span{
+  width:27px;
+  height:5px;
+  border-radius:4px;
+  background:#d8e2dc;
+}
+
+.screen-main{
+  height:calc(100% - 34px);
+  display:grid;
+  grid-template-columns:45% 55%;
+  background:#f1f6f2;
+}
+
+.screen-copy{
+  padding:35px 20px;
+}
+
+.screen-copy small{
+  color:#38a767;
+  font-size:7px;
+  font-weight:800;
+}
+
+.screen-copy h3{
+  color:#10281b;
+  font-family:"Manrope";
+  font-size:22px;
+  line-height:1.05;
+  margin:7px 0;
+}
+
+.screen-copy p{
+  color:#76857d;
+  font-size:7px;
+  line-height:1.5;
+  max-width:140px;
+}
+
+.screen-button{
+  width:68px;
+  height:19px;
+  margin-top:13px;
+  border-radius:5px;
+  background:#35c875;
+}
+
+.screen-photo{
+  position:relative;
+  overflow:hidden;
+  background-image:url("https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85");
+  background-size:cover;
+  background-position:center;
+}
+
+.screen-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(130deg,rgba(4,38,24,.08),rgba(3,30,19,.35));
+}
+
+.laptop-base{
+  position:absolute;
+  width:630px;
+  height:20px;
+  left:-35px;
+  bottom:24px;
+  border-radius:0 0 30px 30px;
+  background:linear-gradient(#aab5b0,#65716c);
+  box-shadow:0 13px 22px rgba(0,0,0,.28);
+}
+
+.laptop-base::after{
+  content:"";
+  position:absolute;
+  width:110px;
+  height:5px;
+  left:260px;
+  top:4px;
+  border-radius:5px;
+  background:#56615d;
+}
+
+.tablet{
+  position:absolute;
+  width:205px;
+  height:285px;
+  right:10px;
+  bottom:42px;
+  z-index:6;
+  padding:7px;
+  border-radius:22px;
+  background:#161d1a;
+  border:3px solid #2c3530;
+  transform:rotate(8deg);
+  box-shadow:0 30px 55px rgba(0,0,0,.45);
+}
+
+.tablet-screen{
+  height:100%;
+  border-radius:15px;
+  overflow:hidden;
+  background:white;
+}
+
+.tablet-image{
+  height:45%;
+  background-image:url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=85");
+  background-size:cover;
+  background-position:center;
+}
+
+.tablet-info{
+  padding:13px;
+  color:#12251b;
+}
+
+.tablet-info b{
+  display:block;
+  font-family:"Manrope";
+  font-size:12px;
+  margin-bottom:7px;
+}
+
+.tablet-lines{
+  display:grid;
+  gap:5px;
+}
+
+.tablet-lines span{
+  height:5px;
+  background:#dce6df;
+  border-radius:5px;
+}
+
+.phone{
+  position:absolute;
+  width:116px;
+  height:220px;
+  left:25px;
+  bottom:45px;
+  z-index:7;
+  padding:5px;
+  border-radius:19px;
+  background:#111916;
+  border:2px solid #303b35;
+  transform:rotate(-7deg);
+  box-shadow:0 25px 45px rgba(0,0,0,.4);
+}
+
+.phone-screen{
+  height:100%;
+  border-radius:14px;
+  overflow:hidden;
+  background:#f5f8f5;
+}
+
+.phone-image{
+  height:48%;
+  background-image:url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=500&q=85");
+  background-size:cover;
+  background-position:center;
+}
+
+.phone-info{
+  padding:9px;
+  color:#12251b;
+}
+
+.phone-info b{
+  font-size:9px;
+  display:block;
+  margin-bottom:6px;
+}
+
+.phone-line{
+  height:4px;
+  background:#d6e2da;
+  margin-bottom:4px;
+  border-radius:5px;
+}
+
+.floating-card{
+  position:absolute;
+  z-index:8;
+  right:250px;
+  top:65px;
+  padding:12px 14px;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(3,25,17,.84);
+  backdrop-filter:blur(12px);
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.floating-card strong{
+  display:block;
+  color:white;
+  font-size:11px;
+}
+
+.floating-card span{
+  color:var(--green);
+  font-size:8px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+  padding:88px 0;
+}
+
+.light{
+  background:var(--light);
+  color:var(--ink);
+}
+
+.heading{
+  margin-bottom:36px;
+}
+
+.heading h2{
+  font-family:"Manrope";
+  font-size:38px;
+  letter-spacing:-1.6px;
+  margin-bottom:7px;
+}
+
+.heading p{
+  color:#788980;
+  font-size:12px;
+  line-height:1.6;
+}
+
+.heading.white p{
+  color:#8fa69a;
+}
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.offer{
+  background:white;
+  border:1px solid #dbe6df;
+  border-radius:17px;
+  padding:9px;
+  box-shadow:0 12px 35px rgba(20,50,34,.07);
+  transition:.3s;
+  position:relative;
+  overflow:hidden;
+}
+
+.offer:hover{
+  transform:translateY(-6px);
+  box-shadow:0 22px 45px rgba(20,50,34,.14);
+}
+
+.offer.featured{
+  border:2px solid var(--green2);
+}
+
+.popular{
+  position:absolute;
+  top:0;
+  right:15px;
+  background:var(--green2);
+  color:white;
+  padding:6px 9px;
+  border-radius:0 0 8px 8px;
+  font-size:8px;
+  font-weight:900;
+}
+
+.offer-image{
+  height:155px;
+  border-radius:11px;
+  overflow:hidden;
+  position:relative;
+}
+
+.offer-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.offer-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.28));
+}
+
+.offer-body{
+  padding:13px 6px 5px;
+}
+
+.offer h3{
+  font-family:"Manrope";
+  font-size:16px;
+  color:#10251a;
+  margin-bottom:5px;
+}
+
+.offer-desc{
+  font-size:9px;
+  color:#78867f;
+  min-height:30px;
+  line-height:1.45;
+}
+
+.price{
+  font-family:"Manrope";
+  font-size:18px;
+  color:#10251a;
+  margin:11px 0;
+  font-weight:800;
+}
+
+.price small{
+  font-family:"DM Sans";
+  font-size:8px;
+  color:#849089;
+  font-weight:400;
+}
+
+.offer ul{
+  list-style:none;
+  display:grid;
+  gap:6px;
+  margin-bottom:13px;
+}
+
+.offer li{
+  color:#56665e;
+  font-size:8px;
+}
+
+.offer li::before{
+  content:"✓";
+  color:#22ad5f;
+  font-weight:900;
+  margin-right:5px;
+}
+
+.offer-btn{
+  width:100%;
+  border:0;
+  border-radius:8px;
+  padding:10px;
+  background:#06261a;
+  color:white;
+  font-size:9px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+/* =========================
+   DEMOS
+========================= */
+
+.demos{
+  background:#031e13;
+}
+
+.demo-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.demo{
+  min-height:445px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:18px;
+  overflow:hidden;
+  position:relative;
+  background:#08271a;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.demo-image{
+  height:445px;
+  position:absolute;
+  inset:0;
+}
+
+.demo-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.6s;
+}
+
+.demo:hover .demo-image img{
+  transform:scale(1.07);
+}
+
+.demo-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(1,17,10,.02) 15%,
+      rgba(1,17,10,.2) 38%,
+      rgba(1,17,10,.96) 100%
+    );
+}
+
+.demo-top{
+  position:absolute;
+  top:17px;
+  left:17px;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  background:rgba(1,20,13,.72);
+  border:1px solid rgba(255,255,255,.15);
+  padding:7px 10px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  font-size:8px;
+  font-weight:800;
+}
+
+.demo-bottom{
+  position:absolute;
+  left:20px;
+  right:20px;
+  bottom:19px;
+  z-index:3;
+}
+
+.demo-number{
+  color:var(--green);
+  font-size:9px;
+  font-weight:900;
+  margin-bottom:7px;
+}
+
+.demo h3{
+  font-family:"Manrope";
+  font-size:24px;
+  margin-bottom:6px;
+}
+
+.demo p{
+  color:#bdcdc5;
+  font-size:10px;
+  line-height:1.55;
+  margin-bottom:14px;
+}
+
+.demo-button{
+  display:inline-flex;
+  border:1px solid var(--green);
+  color:var(--green);
+  border-radius:20px;
+  padding:8px 13px;
+  font-size:9px;
+  font-weight:800;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+  background:#062419;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.step{
+  position:relative;
+}
+
+.step:not(:last-child)::after{
+  content:"→";
+  position:absolute;
+  right:-10px;
+  top:18px;
+  color:#587667;
+}
+
+.step-icon{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:rgba(85,229,141,.08);
+  border:1px solid rgba(85,229,141,.3);
+  color:var(--green);
+  font-weight:900;
+  margin-bottom:13px;
+}
+
+.step small{
+  color:var(--green);
+  font-weight:900;
+  font-size:9px;
+}
+
+.step h3{
+  font-family:"Manrope";
+  font-size:14px;
+  margin:5px 0;
+}
+
+.step p{
+  color:#879f93;
+  font-size:9px;
+  line-height:1.55;
+}
+
+/* =========================
+   WHY
+========================= */
+
+.why{
+  background:#031e13;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+}
+
+.reasons{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px 20px;
+}
+
+.reason{
+  display:flex;
+  gap:10px;
+}
+
+.reason-icon{
+  width:38px;
+  height:38px;
+  flex:none;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  color:var(--green);
+  background:rgba(85,229,141,.08);
+  border:1px solid rgba(85,229,141,.2);
+}
+
+.reason h3{
+  font-size:11px;
+  margin-bottom:4px;
+}
+
+.reason p{
+  color:#80988c;
+  font-size:8px;
+  line-height:1.5;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-title{
+  margin-bottom:18px;
+}
+
+.testimonial-title h2{
+  font-family:"Manrope";
+  font-size:25px;
+}
+
+.testimonial-title p{
+  color:#81988c;
+  font-size:9px;
+  margin-top:5px;
+}
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.testimonial{
+  padding:14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.025);
+}
+
+.stars{
+  color:#c8ed75;
+  letter-spacing:2px;
+  font-size:10px;
+  margin-bottom:9px;
+}
+
+.testimonial p{
+  color:#bdcbc4;
+  font-size:9px;
+  line-height:1.6;
+  margin-bottom:14px;
+}
+
+.person{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.avatar{
+  width:29px;
+  height:29px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#70d897,#285a43);
+  font-size:8px;
+  font-weight:900;
+}
+
+.person strong{
+  display:block;
+  font-size:9px;
+}
+
+.person span{
+  color:#71887c;
+  font-size:7px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section{
+  background:var(--light);
+  color:var(--ink);
+}
+
+.faq{
+  max-width:800px;
+  margin:auto;
+}
+
+.faq-item{
+  border-bottom:1px solid #d7e3db;
+}
+
+.faq-question{
+  width:100%;
+  padding:19px 0;
+  border:0;
+  background:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  text-align:left;
+  cursor:pointer;
+  color:var(--ink);
+  font-weight:800;
+  font-size:12px;
+}
+
+.plus{
+  color:#25ad60;
+  font-size:21px;
+  transition:.3s;
+}
+
+.answer{
+  max-height:0;
+  overflow:hidden;
+  transition:.3s;
+  color:#718078;
+  font-size:10px;
+  line-height:1.7;
+}
+
+.faq-item.active .answer{
+  max-height:130px;
+  padding-bottom:17px;
+}
+
+.faq-item.active .plus{
+  transform:rotate(45deg);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.final{
+  background:
+    radial-gradient(circle at 80% 40%,rgba(85,229,141,.14),transparent 30%),
+    #02150d;
+}
+
+.cta{
+  border:1px solid rgba(85,229,141,.22);
+  background:rgba(6,36,25,.7);
+  border-radius:22px;
+  padding:48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.cta h2{
+  font-family:"Manrope";
+  font-size:38px;
+  letter-spacing:-1.5px;
+  margin-bottom:9px;
+}
+
+.cta p{
+  color:#8fa79a;
+  max-width:620px;
+  font-size:11px;
+  line-height:1.65;
+}
+
+.cta-wa{
+  flex:none;
+  background:var(--green);
+  color:#032015;
+  border-radius:11px;
+  padding:15px 20px;
+  font-weight:900;
+  font-size:11px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#01130b;
+  border-top:1px solid rgba(255,255,255,.07);
+  padding:25px 0;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.copy{
+  color:#687e73;
+  font-size:8px;
+}
+
+.footer-links{
+  display:flex;
+  gap:16px;
+  color:#82978d;
+  font-size:8px;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:.7s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1050px){
+
+  .hero-visual{
+    opacity:.55;
+    right:-12%;
+  }
+
+  .offers{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .demo-grid{
+    grid-template-columns:1fr;
+  }
+
+  .demo{
+    min-height:480px;
+  }
+
+  .demo-image{
+    height:480px;
+  }
+}
+
+@media(max-width:760px){
+
+  header{
+    padding:0;
+  }
+
+  .nav{
+    border-radius:0 0 15px 15px;
+    padding:0 16px;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    padding:12px 18px 18px;
+    background:#031b11;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:0 0 16px 16px;
+    flex-direction:column;
+    gap:0;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .nav-links a{
+    padding:13px 5px;
+    border-bottom:1px solid rgba(255,255,255,.05);
+  }
+
+  .wa-mini{
+    text-align:center;
+    margin-top:8px;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .hero{
+    min-height:790px;
+    padding-top:120px;
+    align-items:flex-start;
+  }
+
+  .hero-content{
+    z-index:10;
+  }
+
+  .hero-visual{
+    width:700px;
+    right:-300px;
+    top:400px;
+    opacity:.5;
+    transform:scale(.75);
+    transform-origin:top right;
+  }
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .hero p{
+    font-size:12px;
+  }
+
+  .offers{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .process-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .step:not(:last-child)::after{
+    display:none;
+  }
+
+  .testimonials{
+    grid-template-columns:1fr;
+  }
+
+  .cta{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:35px 25px;
+  }
+
+  .cta h2{
+    font-size:30px;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+@media(max-width:480px){
+
+  section{
+    padding:65px 0;
+  }
+
+  .hero h1{
+    font-size:39px;
+    letter-spacing:-2px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .hero-visual{
+    right:-360px;
+    top:430px;
+    transform:scale(.65);
+  }
+
+  .offers{
+    grid-template-columns:1fr;
+  }
+
+  .offer-image{
+    height:190px;
+  }
+
+  .process-grid{
+    grid-template-columns:1fr;
+  }
+
+  .reasons{
+    grid-template-columns:1fr;
+  }
+
+  .demo{
+    min-height:410px;
+  }
+
+  .demo-image{
+    height:410px;
+  }
+
+  .demo h3{
+    font-size:21px;
+  }
+
+  .heading h2{
+    font-size:30px;
+  }
+
+  .footer-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+  <div class="container nav">
+
+    <a href="#accueil" class="logo">
+      <span class="logo-mark">C</span>
+      Coulibaly Digital
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#offres">Offres</a>
+      <a href="#demos">Démos</a>
+      <a href="#processus">Processus</a>
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+
+      <a href="#" class="wa-mini whatsapp">
+        WhatsApp · 67 89 07 55
+      </a>
+    </nav>
+
+    <button class="menu" id="menu">☰</button>
+
+  </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="accueil">
+
+  <div class="container">
+
+    <div class="hero-content reveal">
+
+      <div class="badge">
+        <span class="dot"></span>
+        Création de sites web au Mali
+      </div>
+
+      <h1>
+        Votre activité mérite
+        un site web
+        <span>professionnel.</span>
+      </h1>
+
+      <p>
+        Coulibaly Digital conçoit des sites modernes,
+        rapides et adaptés aux réalités des entrepreneurs,
+        commerces, restaurants et entreprises au Mali.
+        Donnez à votre activité une image professionnelle
+        sur internet.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#demos" class="btn btn-green">
+          Découvrir nos démos →
+        </a>
+
+        <a href="#offres" class="btn btn-dark">
+          Voir nos offres
+        </a>
+
+      </div>
+
+      <div class="hero-points">
+
+        <div class="point">
+          <i>✓</i>
+          Design premium
+        </div>
+
+        <div class="point">
+          <i>▣</i>
+          Mobile & ordinateur
+        </div>
+
+        <div class="point">
+          <i>⚡</i>
+          Livraison rapide
+        </div>
+
+        <div class="point">
+          <i>◉</i>
+          WhatsApp intégré
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- VISUEL ORDINATEUR + TABLETTE + SMARTPHONE -->
+
+  <div class="hero-visual">
+
+    <div class="glow"></div>
+
+    <div class="floating-card">
+      <strong>Votre présence digitale</strong>
+      <span>Une image qui inspire confiance.</span>
+    </div>
+
+    <div class="laptop">
+
+      <div class="laptop-screen">
+
+        <div class="laptop-screen-inner">
+
+          <div class="screen-top">
+            <span class="screen-logo">VOTRE MARQUE</span>
+
+            <div class="screen-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="screen-main">
+
+            <div class="screen-copy">
+
+              <small>BIENVENUE</small>
+
+              <h3>
+                Votre activité,
+                autrement.
+              </h3>
+
+              <p>
+                Présentez vos produits,
+                vos services et votre
+                savoir-faire avec une
+                véritable expérience
+                digitale.
+              </p>
+
+              <div class="screen-button"></div>
+
+            </div>
+
+            <div class="screen-photo"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="laptop-base"></div>
+
+    </div>
+
+
+    <div class="tablet">
+
+      <div class="tablet-screen">
+
+        <div class="tablet-image"></div>
+
+        <div class="tablet-info">
+
+          <b>Découvrez notre collection</b>
+
+          <div class="tablet-lines">
+            <span></span>
+            <span></span>
+            <span style="width:65%"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="phone">
+
+      <div class="phone-screen">
+
+        <div class="phone-image"></div>
+
+        <div class="phone-info">
+
+          <b>Nouvelle collection</b>
+
+          <div class="phone-line"></div>
+          <div class="phone-line"></div>
+          <div class="phone-line" style="width:60%"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     OFFRES
+========================= -->
+
+<section class="light" id="offres">
+
+  <div class="container">
+
+    <div class="heading reveal">
+
+      <h2>Nos offres</h2>
+
+      <p>
+        Des solutions accessibles pour donner une vraie
+        présence digitale à votre activité.
+      </p>
+
+    </div>
+
+
+    <div class="offers">
+
+
+      <!-- 01 -->
+
+      <article class="offer reveal">
+
+        <div class="offer-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=85"
+            alt="Site vitrine professionnel">
+
+        </div>
+
+        <div class="offer-body">
+
+          <h3>Site Essentiel</h3>
+
+          <p class="offer-desc">
+            Une présence professionnelle pour présenter votre activité.
+          </p>
+
+          <div class="price">
+            25 000 FCFA
+            <small>/ projet</small>
+          </div>
+
+          <ul>
+            <li>Page d'accueil</li>
+            <li>Présentation</li>
+            <li>Services / produits</li>
+            <li>Contact rapide</li>
+            <li>Compatible mobile</li>
+          </ul>
+
+          <a href="#" class="offer-btn whatsapp">
+            Demander cette offre →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="offer featured reveal">
+
+        <span class="popular">
+          POPULAIRE
+        </span>
+
+        <div class="offer-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&w=900&q=85"
+            alt="Site business professionnel">
+
+        </div>
+
+        <div class="offer-body">
+
+          <h3>Site Business</h3>
+
+          <p class="offer-desc">
+            Une vraie vitrine digitale pour votre entreprise.
+          </p>
+
+          <div class="price">
+            40 000 FCFA
+            <small>/ projet</small>
+          </div>
+
+          <ul>
+            <li>Plusieurs sections</li>
+            <li>Galerie / catalogue</li>
+            <li>WhatsApp intégré</li>
+            <li>Formulaire de contact</li>
+            <li>Design premium</li>
+            <li>Optimisé mobile</li>
+          </ul>
+
+          <a href="#" class="offer-btn whatsapp">
+            Demander cette offre →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="offer reveal">
+
+        <div class="offer-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=900&q=85"
+            alt="Boutique en ligne">
+
+        </div>
+
+        <div class="offer-body">
+
+          <h3>Site E-commerce</h3>
+
+          <p class="offer-desc">
+            Une boutique digitale pour présenter et vendre vos produits.
+          </p>
+
+          <div class="price">
+            55 000 FCFA
+            <small>/ projet</small>
+          </div>
+
+          <ul>
+            <li>Boutique en ligne</li>
+            <li>Catalogue produits</li>
+            <li>Commandes</li>
+            <li>WhatsApp</li>
+            <li>Expérience mobile</li>
+          </ul>
+
+          <a href="#" class="offer-btn whatsapp">
+            Demander cette offre →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="offer reveal">
+
+        <div class="offer-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
+            alt="Projet web sur mesure">
+
+        </div>
+
+        <div class="offer-body">
+
+          <h3>Site Sur Mesure</h3>
+
+          <p class="offer-desc">
+            Une expérience pensée spécialement pour votre projet.
+          </p>
+
+          <div class="price">
+            Sur devis
+          </div>
+
+          <ul>
+            <li>Design personnalisé</li>
+            <li>Fonctionnalités spécifiques</li>
+            <li>Catalogue avancé</li>
+            <li>Réservation</li>
+            <li>Évolution du projet</li>
+          </ul>
+
+          <a href="#" class="offer-btn whatsapp">
+            Discuter du projet →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     DÉMOS
+========================= -->
+
+<section class="demos" id="demos">
+
+  <div class="container">
+
+    <div class="heading white reveal">
+
+      <h2>Voyez ce que votre site peut devenir.</h2>
+
+      <p>
+        Pas de simples rectangles avec du texte :
+        de véritables mises en scène visuelles pour
+        vous permettre d'imaginer le résultat final.
+      </p>
+
+    </div>
+
+
+    <div class="demo-grid">
+
+
+      <!-- BOUTIQUE -->
+
+      <article class="demo reveal">
+
+        <div class="demo-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=90"
+            alt="Démonstration boutique">
+
+        </div>
+
+        <div class="demo-top">
+          ● DÉMO 01 · COMMERCE
+        </div>
+
+        <div class="demo-bottom">
+
+          <div class="demo-number">
+            01 / BOUTIQUE
+          </div>
+
+          <h3>
+            Boutique & marque
+          </h3>
+
+          <p>
+            Une expérience visuelle pensée pour les
+            vêtements, cosmétiques, accessoires,
+            produits artisanaux et marques locales.
+          </p>
+
+          <a href="#" class="demo-button whatsapp">
+            Créer ce type de site →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- RESTAURANT -->
+
+      <article class="demo reveal">
+
+        <div class="demo-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=90"
+            alt="Démonstration restaurant">
+
+        </div>
+
+        <div class="demo-top">
+          ● DÉMO 02 · RESTAURATION
+        </div>
+
+        <div class="demo-bottom">
+
+          <div class="demo-number">
+            02 / RESTAURATION
+          </div>
+
+          <h3>
+            Restaurant & maquis
+          </h3>
+
+          <p>
+            Menu, plats, horaires, localisation,
+            présentation du restaurant et contact
+            pour réservation ou commande.
+          </p>
+
+          <a href="#" class="demo-button whatsapp">
+            Créer ce type de site →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- ENTREPRISE -->
+
+      <article class="demo reveal">
+
+        <div class="demo-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1100&q=90"
+            alt="Démonstration entreprise">
+
+        </div>
+
+        <div class="demo-top">
+          ● DÉMO 03 · ENTREPRISE
+        </div>
+
+        <div class="demo-bottom">
+
+          <div class="demo-number">
+            03 / ENTREPRISE
+          </div>
+
+          <h3>
+            Entreprise & services
+          </h3>
+
+          <p>
+            Présentez vos services, vos expertises,
+            votre équipe, vos réalisations et votre
+            activité avec une image haut de gamme.
+          </p>
+
+          <a href="#" class="demo-button whatsapp">
+            Créer ce type de site →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESSUS
+========================= -->
+
+<section class="process" id="processus">
+
+  <div class="container">
+
+    <div class="heading white reveal">
+
+      <h2>Comment ça marche ?</h2>
+
+      <p>
+        Un processus simple pour transformer votre idée
+        en véritable présence digitale.
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+      <div class="step reveal">
+
+        <div class="step-icon">01</div>
+
+        <small>ÉTAPE 01</small>
+
+        <h3>Vous nous expliquez</h3>
+
+        <p>
+          Votre activité, vos besoins,
+          vos objectifs et vos idées.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-icon">02</div>
+
+        <small>ÉTAPE 02</small>
+
+        <h3>Nous construisons</h3>
+
+        <p>
+          Nous concevons une expérience
+          adaptée à votre image.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-icon">03</div>
+
+        <small>ÉTAPE 03</small>
+
+        <h3>Vous visualisez</h3>
+
+        <p>
+          Vous découvrez le rendu et
+          nous effectuons les ajustements.
+        </p>
+
+      </div>
+
+
+      <div class="step reveal">
+
+        <div class="step-icon">04</div>
+
+        <small>ÉTAPE 04</small>
+
+        <h3>Votre site est livré</h3>
+
+        <p>
+          Votre présence digitale est prête
+          à être présentée à vos clients.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     POURQUOI NOUS
+========================= -->
+
+<section class="why" id="avis">
+
+  <div class="container">
+
+    <div class="why-grid">
+
+
+      <div>
+
+        <div class="heading white reveal">
+
+          <h2>
+            Pourquoi Coulibaly Digital ?
+          </h2>
+
+          <p>
+            Une approche moderne, accessible et pensée
+            pour les entrepreneurs maliens.
+          </p>
+
+        </div>
+
+
+        <div class="reasons">
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">✦</div>
+
+            <div>
+              <h3>Design moderne</h3>
+              <p>
+                Une image professionnelle dès le premier regard.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">◉</div>
+
+            <div>
+              <h3>Pensé pour le Mali</h3>
+              <p>
+                Des solutions adaptées aux réalités locales.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">⚡</div>
+
+            <div>
+              <h3>Rapidité</h3>
+              <p>
+                Nous privilégions des projets efficaces et rapides.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">▱</div>
+
+            <div>
+              <h3>Mobile friendly</h3>
+              <p>
+                Votre site reste élégant sur téléphone, tablette et ordinateur.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">₣</div>
+
+            <div>
+              <h3>Tarifs accessibles</h3>
+              <p>
+                Des offres conçues pour permettre aux petites activités de démarrer.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="reason reveal">
+
+            <div class="reason-icon">♡</div>
+
+            <div>
+              <h3>Accompagnement</h3>
+              <p>
+                Nous restons disponibles pour vous accompagner.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- AVIS -->
+
+      <div>
+
+        <div class="testimonial-title reveal">
+
+          <h2>
+            Ce que nos clients pensent
+          </h2>
+
+          <p>
+            Des expériences qui parlent mieux que des promesses.
+          </p>
+
+        </div>
+
+
+        <div class="testimonials">
+
+
+          <div class="testimonial reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              « Le site donne une image beaucoup plus
+              professionnelle à mon activité. »
+            </p>
+
+            <div class="person">
+
+              <div class="avatar">
+                MD
+              </div>
+
+              <div>
+                <strong>Moussa D.</strong>
+                <span>Commerce · Bamako</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="testimonial reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              « J'ai particulièrement apprécié le design
+              et la simplicité pour mes clients. »
+            </p>
+
+            <div class="person">
+
+              <div class="avatar">
+                AT
+              </div>
+
+              <div>
+                <strong>Awa T.</strong>
+                <span>Restauration · Ségou</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="testimonial reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              « Une solution moderne et adaptée à mon
+              activité. Le résultat est vraiment propre. »
+            </p>
+
+            <div class="person">
+
+              <div class="avatar">
+                IK
+              </div>
+
+              <div>
+                <strong>Ibrahim K.</strong>
+                <span>Services · Mali</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="faq-section" id="faq">
+
+  <div class="container">
+
+    <div class="heading" style="text-align:center">
+
+      <h2>Questions fréquentes</h2>
+
+      <p>
+        Les réponses aux questions que vous pourriez vous poser.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Combien coûte un site web ?
+          <span class="plus">+</span>
+        </button>
+
+        <div class="answer">
+          Nos offres commencent à 25 000 FCFA.
+          Le prix final dépend du niveau de personnalisation
+          et des fonctionnalités demandées.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Le site fonctionne-t-il sur téléphone ?
+          <span class="plus">+</span>
+        </button>
+
+        <div class="answer">
+          Oui. Les sites sont conçus pour fonctionner
+          sur smartphone, tablette et ordinateur.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Quels types d'activités peuvent avoir un site ?
+          <span class="plus">+</span>
+        </button>
+
+        <div class="answer">
+          Boutiques, restaurants, entreprises, services,
+          associations, hôtels, cabinets, portfolios,
+          marques et de nombreuses autres activités.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Comment vous contacter ?
+          <span class="plus">+</span>
+        </button>
+
+        <div class="answer">
+          Directement sur WhatsApp au
+          +223 67 89 07 55.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Combien de temps faut-il pour créer le site ?
+          <span class="plus">+</span>
+        </button>
+
+        <div class="answer">
+          Le délai dépend du projet. Pour les offres simples,
+          nous visons une réalisation rapide, avec possibilité
+          d'une livraison à une journée lorsque le contenu
+          nécessaire est disponible.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+
+<section class="final">
+
+  <div class="container">
+
+    <div class="cta reveal">
+
+      <div>
+
+        <h2>
+          Votre site commence ici.
+        </h2>
+
+        <p>
+          Vous avez une boutique, un restaurant, une entreprise
+          ou simplement une idée ? Présentez-nous votre projet
+          et discutons directement sur WhatsApp.
+        </p>
+
+      </div>
+
+
+      <a href="#" class="cta-wa whatsapp">
+
+        ◉ &nbsp;
+        WhatsApp · 67 89 07 55
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer">
+
+    <a href="#accueil" class="logo">
+      <span class="logo-mark">C</span>
+      Coulibaly Digital
+    </a>
+
+    <div class="copy">
+      © <span id="year"></span> Coulibaly Digital.
+      Tous droits réservés.
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#offres">Offres</a>
+      <a href="#demos">Démos</a>
+      <a href="#faq">FAQ</a>
+
+      <a href="#" class="whatsapp">
+        +223 67 89 07 55
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+/* ==========================================
+   TON NUMÉRO WHATSAPP
+========================================== */
+
+const WHATSAPP_NUMBER = "22367890755";
+
+const WHATSAPP_MESSAGE =
+"Bonjour Coulibaly Digital 👋%0A%0A" +
+"Je viens de visiter votre site et " +
+"je souhaite avoir des informations " +
+"sur la création d'un site web pour mon activité.";
+
+
+/* ==========================================
+   TOUS LES BOUTONS WHATSAPP
+========================================== */
+
+document.querySelectorAll(".whatsapp").forEach(button => {
+
+  button.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    window.open(
+      "https://wa.me/" +
+      WHATSAPP_NUMBER +
+      "?text=" +
+      WHATSAPP_MESSAGE,
+      "_blank"
+    );
+
+  });
+
+});
+
+
+/* ==========================================
+   MENU MOBILE
+========================================== */
+
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("navLinks");
+
+menu.addEventListener("click", () => {
+
+  navLinks.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    navLinks.classList.remove("active");
+
+  });
+
+});
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+document.querySelectorAll(".faq-question").forEach(question => {
+
+  question.addEventListener("click", () => {
+
+    const item = question.parentElement;
+
+    document.querySelectorAll(".faq-item").forEach(other => {
+
+      if(other !== item){
+        other.classList.remove("active");
+      }
+
+    });
+
+    item.classList.toggle("active");
+
+  });
+
+});
+
+
+/* ==========================================
+   ANIMATIONS AU SCROLL
+========================================== */
+
+const observer = new IntersectionObserver(
+
+  entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add("show");
+
+      }
+
+    });
+
+  },
+
+  {
+    threshold:0.08
+  }
+
+);
+
+
+document.querySelectorAll(".reveal").forEach(element => {
+
+  observer.observe(element);
+
+});
+
+
+/* ==========================================
+   ANNÉE AUTOMATIQUE
+========================================== */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+  </html>
